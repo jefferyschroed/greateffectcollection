@@ -1,0 +1,23 @@
+body{
+    background-color: white;
+    transition: background-color 1s ease-in-out;
+}
+
+body.loaded{
+    background-color: #282828;
+}
+
+.mainText{
+    color: #282828;
+    transition: color 1s ease-in-out;
+    font-size: 78px;
+    text-align: center;
+    margin-top: 25px;
+    line-height: 80%;
+    font-family: laro;
+    font-weight: 600;
+}
+
+.mainText.loaded{
+    color: white;
+}

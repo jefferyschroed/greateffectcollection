@@ -1,11 +1,6 @@
-window.onload = function() {
-    document.body.classList.add("loaded");
-    var mainTextElements = document.querySelectorAll('.main-text');
-    for (var i = 0; i < mainTextElements.length; i++) {
-        mainTextElements[i].classList.add('loaded');
-    }
-
-
+//                                //
+// SLIDING PARALLAX PHOTO COLLAGE //
+//                                //
 const track = document.getElementById("image-track");
 // creates variable 'track' to be used in javascript, representing image-track from html
 const handleOnDown = e => track.dataset.mouseDownAt = e.clientX;
@@ -55,4 +50,6 @@ window.onmousemove = e => handleOnMove(e);
 
 window.ontouchmove = e => handleOnMove(e.touches[0]);
 
-}
+//
+//
+//

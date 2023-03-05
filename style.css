@@ -1,6 +1,12 @@
 body {
     background-color: #111320;     /* other is 353744 */
     overflow-x: hidden;
+    color: white;
+    font-family: laro;
+}
+
+** {
+    border: white solid 2px;
 }
 
 li {
@@ -42,8 +48,23 @@ li {
     display: block;
 }
 
+.section {
+    height: 450px;
+    margin-top: 75px;
+}
+
+h1, h3 {
+    text-align: center;
+    margin: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(0, 64, 255);
+}
+
 #image-track {
-    margin-top: 2vmin;
+    margin-top: 15vmin;
     display: flex;
     gap: 4vmin;
     position: absolute;

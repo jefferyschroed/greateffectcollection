@@ -5,7 +5,7 @@ body {
     font-family: laro;
 }
 
-** {
+* {
     border: white solid 2px;
 }
 
@@ -53,6 +53,14 @@ li {
     margin-top: 75px;
 }
 
+.section2 {
+    height: 450px;
+    margin-top: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 h1, h3 {
     text-align: center;
     margin: 0px;
@@ -94,6 +102,47 @@ a {
 
 .button1:hover + .buttonbg {
     display: block;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 30px;
+    height: 100%;
+}
+
+.square1 {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background-color: #FFA8A8;
+    height: 215px;
+    border-radius: 24px;
+}
+
+.square2 {
+    background-color: #9EFFAD;
+    height: 215px;
+    border-radius: 24px;
+}
+
+.square3 {
+    background-color: #C29DFF;
+    height: 215px;
+    border-radius: 24px;
+}
+
+.square4 {
+    background-color: #90CAFF;
+    height: 215px;
+    border-radius: 24px;
+}
+
+.square5 {
+    background-color: #FFA8A8;
+    width: 236px;
+    height: 215px;
+    border-radius: 24px;
 }
 
 #image-track {

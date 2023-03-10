@@ -50,6 +50,27 @@ window.onmousemove = e => handleOnMove(e);
 
 window.ontouchmove = e => handleOnMove(e.touches[0]);
 
-//
-//
-//
+//                                 //
+// FADE ALL SQUARES EXCEPT HOVERED //
+//                                 //
+const squares = document.querySelectorAll('.square');
+
+squares.forEach(square => {
+  square.addEventListener('mouseover', () => {
+    // Set opacity of all other squares to 0.5
+    squares.forEach(otherSquare => {
+      if (otherSquare !== square) {
+        otherSquare.style.opacity = 0.5;
+      }
+    });
+  });
+
+  square.addEventListener('mouseout', () => {
+    // Reset opacity of all other squares to 1
+    squares.forEach(otherSquare => {
+      if (otherSquare !== square) {
+        otherSquare.style.opacity = 1;
+      }
+    });
+  });
+});
